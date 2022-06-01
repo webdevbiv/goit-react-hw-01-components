@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+// import React, { Component } from "react";
 import React from "react";
 import PropTypes from "prop-types";
 import { Section, FriendListWrapper, FriendListList, FriendListItem, FriendListStatus, FriendListImage, FriendListName } from '../style'
