@@ -13,6 +13,14 @@ import { Section, FriendListWrapper, FriendListList, FriendListItem, FriendListS
 //     render() {
 //         return <div>Class Component</div>;
 //     }
+// class MyClassComponent extends Component {
+//     static defaultProps = {};
+
+//     static propTypes = {};
+
+//     render() {
+//         return <div>Class Component</div>;
+//     }
 const FriendList = ({ friends }) => {
     return (
         <Section>
