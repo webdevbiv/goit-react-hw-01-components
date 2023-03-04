@@ -1,10 +1,10 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-function Statistics({ stats }) {
+function Statistics({ stats, title }) {
     return (
         <>
-            <h2 className="title">Upload stats</h2>
+            {title && <h2 className="title">Upload stats</h2>}
             <ul className="stat-list">
                 {stats.map(item => (
                     <li key={item.id}>
@@ -24,7 +24,8 @@ Statistics.propTypes = {
             label: PropTypes.string.isRequired,
             percentage: PropTypes.number.isRequired
         })
-    ).isRequired
+    ).isRequired,
+    title: PropTypes.string
 }
 
 export default Statistics
