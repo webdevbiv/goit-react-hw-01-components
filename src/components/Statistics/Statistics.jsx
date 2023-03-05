@@ -4,15 +4,18 @@ import PropTypes from 'prop-types'
 function Statistics({ stats, title }) {
     return (
         <>
-            {title && <h2 className="title">Upload stats</h2>}
-            <ul className="stat-list">
-                {stats.map(item => (
-                    <li key={item.id}>
-                        <span className="label" >{item.label}</span>
-                        <span className="percentage" >{item.percentage}</span>
-                    </li>
-                ))}
-            </ul>
+
+            <div className={`section`}>
+                {title && <h2 className="title">Upload stats</h2>}
+                <ul className="stat-list">
+                    {stats.map(item => (
+                        <li key={item.id}>
+                            <span className="label" >{item.label}</span>
+                            <span className="percentage" >{item.percentage}</span>
+                        </li>
+                    ))}
+                </ul>
+            </div>
         </>
     )
 }
