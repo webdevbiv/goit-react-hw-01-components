@@ -8,9 +8,9 @@ function TransactionHistory({ items }) {
             <table className={s.transaction_history}>
                 <thead>
                     <tr>
-                        <th>Type</th>
-                        <th>Amount</th>
-                        <th>Currency</th>
+                        <th><span>Type</span></th>
+                        <th><span>Amount</span></th>
+                        <th><span>Currency</span></th>
                     </tr>
                 </thead>
                 <tbody>

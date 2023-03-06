@@ -3,15 +3,13 @@
     border-spacing: 0;
     border-collapse: collapse;
     & th {
-        color: white;
+        border-collapse: collapse;
+        
         background-color: #00BCD5;
         padding-top: 8px;
         padding-bottom: 8px;
-        &:first-child {
-            border-radius: 0px 0px 0px 0px;
-        }
-        &:last-child {
-            border-radius: 0px 0px 0px 0px;
+        & span {
+            color: white;
         }
     }
     & tr {
@@ -19,24 +17,15 @@
         &:nth-child(2n) {
             background-color: #ECF1F3;
         }
-        &:last-child {
-            border-bottom: none;
-        }
     }
     & td {
         text-align: center;
         padding-top: 6px;
         padding-bottom: 6px;
         border-collapse: collapse;
-        &:last-child {
-            border-right: 0px;
-            
-        }
-        &:first-child{
-            border-bottom: none;
-        }
     }
-    & tr, th, td {
-        
+    & table, th, td, tr {
+        border: 1px solid;
+        border-collapse: collapse;
     }
 }
