@@ -1,10 +1,11 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import s from '../TransactionHistory/TransactionHistory.module.scss'
 
 function TransactionHistory({ items }) {
     return (
-        <div className={`section__last`}>
-            <table className="transaction-history">
+        <div className={`section section_bg wrapper`}>
+            <table className={s.transaction_history}>
                 <thead>
                     <tr>
                         <th>Type</th>
