@@ -6,7 +6,7 @@ import s from '../FriendList/FriendList.module.scss'
 function FriendList({ friends }) {
     return (
         <div className={`section wrapper`}>
-            <ul className="friend-list">
+            <ul className={s.friend_list}>
                 <FriendListItem friends={friends} />
             </ul>
         </div>
