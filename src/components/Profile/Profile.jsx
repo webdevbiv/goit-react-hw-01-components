@@ -4,9 +4,9 @@ import s from '../Profile/Profile.module.scss'
 
 function Profile({ username, tag, location, avatar, stats: { followers, views, likes } }) {
     return (
-        <div className={`section`}>
+        <div className={`section wrapper`}>
             <div className={s.profile}>
-                <div className="description">
+                <div>
                     <img
                         src={avatar}
                         alt="User avatar"
@@ -14,7 +14,7 @@ function Profile({ username, tag, location, avatar, stats: { followers, views, l
                     />
                     <p className={s.name}>{username}</p>
                     <p className={s.tag}>{tag}</p>
-                    <p className={s.tag}>{location}</p>
+                    <p className={s.location}>{location}</p>
                 </div>
                 <ul className={s.stats}>
                     <li className={s.item}>
