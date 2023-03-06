@@ -5,7 +5,7 @@ import rc from 'randomcolor'
 
 function Statistics({ stats, title }) {
     return (
-        <div className={`section wrapper`}>
+        <div className={`section wrapper section_bg`}>
             {title && <h2 className={s.title}>Upload stats</h2>}
             <ul className={s.stat_list}>
                 {stats.map(item => (

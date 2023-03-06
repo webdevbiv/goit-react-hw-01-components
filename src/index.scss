@@ -12,7 +12,7 @@
 
 .section {
   font-size: 20px;
-  background-color: white;
+
   border-radius: 10px;
   margin-top: 40px;
   margin-bottom: 40px;
@@ -21,6 +21,10 @@
 .wrapper{
     box-shadow: -5px 2px 18px 4px #ccc;
     border-radius: 10px 10px 10px 10px;
+}
+
+.section_bg{
+  background-color: white;
 }
 
 

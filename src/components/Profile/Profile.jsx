@@ -4,7 +4,7 @@ import s from '../Profile/Profile.module.scss'
 
 function Profile({ username, tag, location, avatar, stats: { followers, views, likes } }) {
     return (
-        <div className={`section wrapper`}>
+        <div className={`section wrapper section_bg`}>
             <div className={s.profile}>
                 <div>
                     <img
