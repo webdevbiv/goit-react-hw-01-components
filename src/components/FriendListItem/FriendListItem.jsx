@@ -1,19 +1,27 @@
 import s from '../FriendListItem/FriendListItem.module.scss'
+import PropTypes from 'prop-types'
 
-function FriendListItem({ friends }) {
+function FriendListItem({ friend }) {
 
     return (
-        friends.map(item => (
-            <li className={`${s.item} wrapper section_bg`} key={item.id}>
-                <span className={`
+        <li className={`${s.item} wrapper section_bg`}>
+            <span className={`
                 ${s.status} 
-                ${item.isOnline ? s.online : s.offline}
+                ${friend.isOnline ? s.online : s.offline}
                 `}></span>
-                <img className={s.avatar} src={item.avatar} alt="User avatar" width="48" />
-                <p className="name">{item.name}</p>
-            </li >
-        ))
+            <img className={s.avatar} src={friend.avatar} alt="User avatar" width="48" />
+            <p className="name">{friend.name}</p>
+        </li >
     )
+}
+
+FriendListItem.propTypes = {
+    friend: PropTypes.shape({
+        avatar: PropTypes.string.isRequired,
+        name: PropTypes.string.isRequired,
+        isOnline: PropTypes.bool.isRequired,
+        id: PropTypes.number.isRequired
+    }).isRequired
 }
 
 export default FriendListItem

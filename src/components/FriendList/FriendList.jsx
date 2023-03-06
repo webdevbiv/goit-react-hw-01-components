@@ -7,7 +7,9 @@ function FriendList({ friends }) {
     return (
         <div className={`section`}>
             <ul className={s.friend_list}>
-                <FriendListItem friends={friends} />
+                {friends.map(item => (
+                    <FriendListItem friend={item} key={item.id} />
+                ))}
             </ul>
         </div>
     )
