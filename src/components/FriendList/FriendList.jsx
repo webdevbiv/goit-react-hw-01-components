@@ -1,4 +1,3 @@
-import React from 'react'
 import PropTypes from 'prop-types'
 import FriendListItem from '../FriendListItem/FriendListItem'
 import s from '../FriendList/FriendList.module.scss'
